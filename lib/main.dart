@@ -1,8 +1,13 @@
-import 'package:firebase_authproject/google_auth/homescreen.dart';
-import 'package:firebase_authproject/google_auth/login.dart';
+// import 'package:firebase_authproject/google_auth/homescreen.dart';
+// import 'package:firebase_authproject/google_auth/login.dart';
 import 'package:firebase_authproject/services/firebaseServices.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+
+import 'email_auth/home_screen.dart';
+import 'email_auth/login_screen.dart';
+
+
 
 void main()async{
   WidgetsFlutterBinding.ensureInitialized();
@@ -40,6 +45,7 @@ class MyApp extends StatelessWidget {
           return LoginScreen();
         }
       ),
+      
     );
   }
 }
